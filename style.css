@@ -1,0 +1,1325 @@
+@font-face 
+{
+ font-family: 'Open Sans'; 
+ src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+ }
+  @font-face { 
+    font-family: 'Montserrat'; 
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+
+ } 
+ @font-face { 
+    font-family: 'Play Fair'; 
+    src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf); 
+} 
+@font-face {
+    font-family: 'Open Sans italic';
+    src: url(./fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+*{
+ margin: 0;
+  padding: 0;
+   box-sizing: border-box;
+ } 
+ html,body{ 
+    overflow-x: hidden; 
+} 
+.navbar{
+    width: 100%; 
+    min-height: 80px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+     } 
+     .logo{ 
+        width: 70px; 
+        height: 30px; 
+    } 
+    
+    #icon {
+    font-size: 28px;
+}
+
+@media screen and (max-width:575px) {
+    #icon {
+        font-size: 20px;
+    }
+}
+
+.nature-by-phone {
+    width: 100%;
+    background-image: url(./img/nature.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.read-more {
+    background-color: #f67b6f;
+    border: none;
+    color: white;
+    font-family: 'Open Sans';
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 15px;
+    display: block;
+    margin: 10px auto;
+}
+
+.phone {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.all-content {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.content1 {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.content2 {
+    font-size: 60px;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+}
+
+@media screen and (max-width:575px) {
+    .content1 {
+        font-size: 15px;
+    }
+    .content2 {
+        font-size: 48px;
+        text-align: center;
+    }
+    .words-of-nature {
+        width: 100%;
+        max-width: 350px;
+    }
+    .phone {
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .content1 {
+        font-size: 18px;
+    }
+    .content2 {
+        font-size: 60px;
+        text-align: center;
+    }
+    .words-of-nature {
+        width: 100%;
+        max-width: 500px;
+    }
+    .phone {
+        max-width: 400px;
+    }
+}
+
+.latest-news {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #f67b6f;
+}
+
+.views {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sea {
+    width: 310px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.fresh-views {
+    width: 350px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.news {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 48px;
+    font-family: 'Play Fair';
+}
+
+.link1 {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.text {
+    width: 305px;
+    padding-top: 20px;
+}
+
+.date {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: #B3B3B3;
+    padding-top: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.learn-button {
+    border: none;
+    color: white;
+    padding: 11px 30px;
+    background-color: #f67b6f;
+    border: 2px solid white;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+    border-radius: 12px;
+}
+
+.learn-button:hover {
+    background-color: white;
+    color: #f67b6f;
+    cursor: pointer;
+}
+
+@media screen and (max-width:575px) {
+    .latest-news {
+        padding-bottom: 20px;
+    }
+    .views {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fresh-views {
+        width: 100%;
+        max-width: 310px;
+    }
+    .sea {
+        width: 100%;
+        max-width: 285px;
+        min-height: 220px;
+    }
+    .text {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .latest-news {
+        padding-bottom: 20px;
+    }
+    .views {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fresh-views {
+        width: 100%;
+        max-width: 450px;
+        min-height: 430px;
+    }
+    .sea {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+    .text {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .latest-news {
+        padding-bottom: 20px;
+    }
+    .views {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+    .fresh-views {
+        width: 100%;
+        max-width: 350px;
+    }
+    .views::after {
+        content: "";
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1110px) {
+    .latest-news {
+        padding-bottom: 20px;
+    }
+    .fresh-views {
+        width: 100%;
+        max-width: 315px;
+        min-height: 380px;
+    }
+    .sea {
+        width: 100%;
+        max-width: 280px;
+        height: 220px;
+    }
+    .text {
+        width: 278px;
+    }
+}
+
+.travel-with-us {
+    width: 100%;
+    min-height: 110vh;
+    background-color: #d3e1e0;
+}
+
+.all-about-travel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.travel-section {
+    width: 100%;
+    max-width: 830px;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.about-travel {
+    max-width: 500px;
+    padding-top: 20px;
+}
+
+.travel-header {
+    font-size: 48px;
+    font-family: 'Play Fair';
+}
+
+.travel-text {
+    font-size: 18px;
+    font-family: 'Open Sans';
+    line-height: 2;
+}
+
+.learn-more {
+    border: none;
+    color: white;
+    padding: 11px 30px;
+    background-color: #f67b6f;
+    border: 2px solid white;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+    border-radius: 12px;
+}
+
+.house-picture {
+    width: 100%;
+    max-width: 520px;
+    min-height: 500px;
+    border-radius: 100%;
+    object-fit: cover;
+    transform: translateY(85px);
+}
+
+.pink-section {
+    width: 150px;
+    height: 150px;
+    background-color: #f67b6f;
+    position: absolute;
+    right: -20px;
+    bottom: -120px;
+    border-radius: 100%;
+}
+
+.house-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: -200px;
+}
+
+/* --------- TRAVEL MEDIA --------- */
+@media screen and (max-width:470px) {
+    .travel-section {
+        max-width: 290px;
+        min-height: 450px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    .learn-more {
+        margin-top: 10px;
+    }
+    .house-picture {
+        max-width: 220px;
+        min-height: 220px;
+        transform: translateY(250px);
+    }
+    .travel-header {
+        font-size: 24px;
+    }
+    .pink-section {
+        width: 100px;
+        height: 100px;
+        transform: translateY(180px);
+    }
+    .travel-text {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:471px) and (max-width:576px) {
+    .travel-section {
+        max-width: 320px;
+        min-height: 450px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    .learn-more {
+        margin-top: 10px;
+    }
+    .house-picture {
+        max-width: 320px;
+        min-height: 320px;
+        transform: translateY(270px);
+    }
+    .travel-header {
+        font-size: 24px;
+    }
+    .pink-section {
+        width: 100px;
+        height: 100px;
+        transform: translateY(180px);
+    }
+    .travel-text {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .travel-section {
+        max-width: 400px;
+        min-height: 450px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    .learn-more {
+        margin-top: 10px;
+    }
+    .house-picture {
+        max-width: 360px;
+        min-height: 350px;
+        transform: translateY(290px);
+    }
+    .pink-section {
+        width: 100px;
+        height: 100px;
+        transform: translateY(180px);
+    }
+}
+
+.forest-section {
+    width: 100%;
+    min-height: 120vh;
+    background-image: url(./img/forest.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    background-color: #476160;
+    opacity: 0.5;
+    width: 45%;
+    height: 75%;
+    border-radius: 100%;
+    transform: translateY(80px);
+    position: absolute;
+    left: 10%;
+    z-index: 0;
+}
+
+.people-activities {
+    border-radius: 100%;
+}
+
+.people-hobbies {
+    width: 280px;
+    height: 240px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.activities {
+    max-width: 55%;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+    transform: translate(50%);
+    padding-top: 60px;
+    justify-content: center;
+}
+
+.all-about-forest {
+    display: flex;
+}
+
+.flight-text {
+    font-size: 18px;
+    color: #476160;
+    font-family: 'Montserrat';
+    letter-spacing: 4px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+/* ---------- FOREST MEDIA ----------- */
+@media screen and (max-width:400px) {
+    .activities {
+        max-width: 88%;
+        transform: translate(10%);
+        align-items: center;
+    }
+    .activities::after {
+        content: "";
+        width: 130px;
+    }
+    .people-hobbies {
+        width: 130px;
+        height: 170px;
+    }
+    .flight-text {
+        font-size: 10px;
+    }
+    .people-activities {
+        width: 80px;
+    }
+    .overlay {
+        width: 85%;
+        height: 50%;
+        transform: translateY(10%);
+    }
+    .forest-section {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:574px) {
+    .activities {
+        max-width: 88%;
+        transform: translate(10%);
+    }
+    .activities::after {
+        content: "";
+        width: 155px;
+    }
+    .people-hobbies {
+        width: 155px;
+        height: 170px;
+    }
+    .flight-text {
+        font-size: 10px;
+    }
+    .people-activities {
+        width: 80px;
+    }
+    .overlay {
+        width: 85%;
+        height: 50%;
+        transform: translateY(10%);
+    }
+    .forest-section {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:575px) and (max-width:768px) {
+    .activities {
+        max-width: 88%;
+        transform: translate(10%);
+    }
+    .activities::after {
+        content: "";
+        width: 155px;
+    }
+    .people-hobbies {
+        width: 155px;
+        height: 170px;
+    }
+    .flight-text {
+        font-size: 10px;
+    }
+    .people-activities {
+        width: 80px;
+    }
+    .overlay {
+        width: 70%;
+        height: 60%;
+        transform: translateY(15%);
+    }
+    .forest-section {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .activities {
+        max-width: 88%;
+        transform: translate(10%);
+    }
+    .activities::after {
+        content: "";
+        width: 210px;
+    }
+    .people-hobbies {
+        width: 210px;
+        height: 170px;
+    }
+    .flight-text {
+        font-size: 10px;
+    }
+    .people-activities {
+        width: 80px;
+    }
+    .overlay {
+        width: 70%;
+        height: 60%;
+        transform: translateY(20%);
+    }
+    .forest-section {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1340px) {
+    .activities {
+        max-width: 88%;
+        transform: translate(10%);
+    }
+    .activities::after {
+        content: "";
+        width: 280px;
+    }
+    .people-hobbies {
+        width: 280px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:1341px) {
+    .activities {
+        max-width: 88%;
+        transform: translate(10%);
+    }
+    .activities::after {
+        content: "";
+        width: 380px;
+    }
+    .people-hobbies {
+        width: 380px;
+        height: 230px;
+    }
+}
+
+.something-fun-section{
+    width:100%;
+    min-height: 180vh;
+    
+}
+.divisions{
+    display: flex;
+}
+
+.pink-division{
+    width: 53%;
+    height: 60vh;
+    background-color: #f67b6f;
+    position: relative;
+    
+    
+}
+.blue-division{
+    width: 47%;
+    height: 55vh;
+    background-color: #d3e1e0;
+    transform: translateY(50%);
+    position: relative;
+}
+.scale{
+    width: 600px;
+    height: 580px;
+    object-fit: cover;
+    border-radius: 100%;
+    transform: translateY(16%);
+
+}
+.scale-section{
+   transform: translateX(60%);
+   position: absolute;
+   z-index: 1;
+}
+.fun-section{
+    background-color: #476160;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left:55%;
+    transform: translateY(-20%);
+    border-radius: 50px ;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fun-button{
+    border: none;
+    color: white;
+    padding: 11px 30px;
+    background-color: #f67b6f;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+    border-radius: 12px;
+}
+
+.fun-caption{
+    color:white;
+    font-size: 36px;
+    font-family: 'Play Fair'; 
+    padding-bottom: 20px;
+}
+.fun-text{
+    color:white;
+    font-size: 18px;
+    font-family: 'Open Sans'; 
+    line-height: 2;
+    padding-bottom: 20px;
+    width: 430px;
+}
+.link-text{
+    color:white;
+    font-size: 18px;
+    font-family: 'Open Sans'; 
+    padding-bottom: 30px;
+
+}
+.freepik-link{
+    color:white;
+    text-decoration: underline;
+    font-size: 18px;
+    font-family: 'Open Sans'; 
+    
+}
+.other-text{
+    width: 400px;
+    font-size: 24px;
+    line-height: 1.4;
+    transform: translateY(-150%);
+    margin-left: -20%;
+    font-family: 'Open Sans italic';
+}
+
+@media (max-width: 575px) {
+
+  .something-fun-section{
+    min-height: 180vh;
+    overflow-x: hidden;
+  }
+  .scale-section{
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+   
+  }
+  .pink-division{
+    height: 40vh;
+  }
+  .blue-division{
+    height: 30vh;
+  }
+
+  .scale{
+    width: 280px;
+    height: 280px;
+    transform: none;
+  }
+
+  .fun-section{
+    width: 300px;
+    height: auto;
+    left: 0;
+    transform: none;
+    padding: 30px 20px;
+    margin-top: -60px;
+  }
+
+  .fun-text{
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .fun-caption{
+    font-size: 26px;
+  }
+
+  .other-text{
+    width: 90%;
+    transform: none;
+    margin: 30px auto 0;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width:769px) {
+
+  .something-fun-section{
+    min-height: 180vh;
+    overflow-x: hidden;
+  }
+  .scale-section{
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+   
+  }
+  .pink-division{
+    height: 40vh;
+  }
+  .blue-division{
+    height: 30vh;
+  }
+
+  .scale{
+    width: 380px;
+    height: 380px;
+    transform: none;
+  }
+
+  .fun-section{
+    width: 380px;
+    height: auto;
+    left: 0;
+    transform: translateX(20%);
+    padding: 30px 20px;
+    margin-top: -60px;
+  }
+
+  .fun-text{
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .fun-caption{
+    font-size: 26px;
+  }
+
+  .other-text{
+    width: 90%;
+    transform: none;
+    margin: 30px auto 0;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 770px) and (max-width:1100px) {
+
+  .something-fun-section{
+    min-height: 180vh;
+    overflow-x: hidden;
+  }
+  .scale-section{
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+   
+  }
+  .pink-division{
+    height: 40vh;
+  }
+  .blue-division{
+    height: 30vh;
+  }
+
+  .scale{
+    width: 420px;
+    height: 420px;
+    transform: none;
+  }
+
+  .fun-section{
+    width: 450px;
+    height: 450px;
+    left: 0;
+    transform: translateX(20%);
+    padding: 30px 20px;
+    margin-top: -60px;
+  }
+
+  .fun-text{
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .fun-caption{
+    font-size: 26px;
+  }
+
+  .other-text{
+    width: 90%;
+    transform: none;
+    margin: 30px auto 0;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:1101px) and (max-width:1170px) {
+    .fun-section{
+        width: 415px;
+    }
+    .fun-text{
+        font-size: 16px;
+    }
+    
+}
+.mountain-section{
+    width: 100%;
+    min-height: 160vh;
+    background-color: #476160;
+    padding-top: 40px;
+}
+.travel-all{
+    display: flex;
+    justify-content: center;
+
+}
+.mountain-photo{
+    width: 580px;
+    height: 580px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 20px solid #f67b6f;
+    position: relative;
+   
+    
+    
+}
+.trees-img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    position: relative;
+    left:45%;
+    transform: translateY(90%);
+    z-index: 1;
+    
+}
+.travel-division{
+
+    background-color: white;
+    width: 860px;
+    height: 500px;
+    border-radius: 50px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+    left:-10%;
+    transform: translateY(50%);
+    z-index: 1;
+    
+}
+.travel-caption{
+  font-size: 48px;
+  font-family: 'Play Fair'; 
+  padding-bottom: 20px;
+
+}
+.travel-text{
+    font-size: 20px;
+    font-family: 'Open Sans'; 
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.freepik-link1{
+    color: black;
+    text-decoration: underline;
+    font-size: 18px;
+    font-family: 'Open Sans'; 
+    text-decoration: underline;
+}
+.link-text1{
+    color:black;
+    font-size: 18px;
+    font-family: 'Open Sans'; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.pink-circle{
+    width: 120px;
+    height: 120px;
+    border: 23px solid #f67b6f;
+    border-radius: 100%;
+    opacity: 0.7;
+}
+.pink-circle1{
+    width: 200px;
+    height: 200px;
+    border: 40px solid #f67b6f;
+    border-radius: 100%;
+    margin-top: 70px;
+
+}
+.circle-division{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+   
+}
+
+
+ @media (max-width: 575px) {
+
+  .mountain-section{
+    min-height: auto;
+    padding: 40px 15px;
+    margin-top:60px;
+  }
+
+  .travel-all{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .mountain-photo{
+    width: 260px;
+    height: 260px;
+    border: 12px solid #f67b6f;
+  }
+
+  
+  .trees-img{
+    width: 150px;
+    height: 150px;
+    left: -120px;
+    transform: translateY(140%);
+
+  }
+
+  .trees{
+    margin-bottom: -60px;
+  }
+
+ 
+  .travel-division{
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    padding: 25px 15px;
+    left: 0;
+    transform: none;
+    margin-top: 20px;
+    position: static;
+    left: 0;
+   
+    
+  }
+
+  .travel-caption{
+    font-size: 28px;
+  }
+
+  .travel-text{
+    font-size: 16px;
+  }
+
+  .link-text1,
+  .freepik-link1{
+    font-size: 14px;
+  }
+
+  
+  .circle-division{
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0 0 0;
+  }
+
+  .pink-circle{
+    width: 70px;
+    height: 70px;
+    border-width: 12px;
+  }
+
+  .pink-circle1{
+    width: 110px;
+    height: 110px;
+    border-width: 18px;
+    margin-top: 0;
+  }
+} 
+
+ @media (min-width: 576px) and (max-width:769px) {
+
+  .mountain-section{
+    min-height: auto;
+    padding: 40px 15px;
+    margin-top:60px;
+  }
+
+  .travel-all{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .mountain-photo{
+    width: 350px;
+    height: 350px;
+    border: 12px solid #f67b6f;
+  }
+
+  
+  .trees-img{
+    width: 150px;
+    height: 150px;
+    left: -120px;
+    transform: translateY(190%);
+
+  }
+
+  .trees{
+    margin-bottom: -60px;
+  }
+
+ 
+  .travel-division{
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    padding: 25px 15px;
+    left: 0;
+    transform: none;
+    margin-top: 20px;
+    position: static;
+    left: 0;
+   
+    
+  }
+
+  .travel-caption{
+    font-size: 28px;
+  }
+
+  .travel-text{
+    font-size: 16px;
+  }
+
+  .link-text1,
+  .freepik-link1{
+    font-size: 14px;
+  }
+
+  
+  .circle-division{
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0 0 0;
+  }
+
+  .pink-circle{
+    width: 70px;
+    height: 70px;
+    border-width: 12px;
+  }
+
+  .pink-circle1{
+    width: 110px;
+    height: 110px;
+    border-width: 18px;
+    margin-top: 0;
+  }
+} 
+
+@media (min-width: 770px) and (max-width:1100px) {
+
+  .mountain-section{
+    min-height: auto;
+    padding: 40px 15px;
+    margin-top:120px;
+  }
+
+  .travel-all{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .mountain-photo{
+    width: 390px;
+    height: 390px;
+    border: 12px solid #f67b6f;
+  }
+
+  
+  .trees-img{
+    width: 150px;
+    height: 150px;
+    left: -120px;
+    transform: translateY(220%);
+
+  }
+
+  .trees{
+    margin-bottom: -60px;
+  }
+
+ 
+  .travel-division{
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    padding: 25px 15px;
+    left: 0;
+    transform: none;
+    margin-top: 20px;
+    position: static;
+    left: 0;
+   
+    
+  }
+
+  .travel-caption{
+    font-size: 28px;
+  }
+
+  .travel-text{
+    font-size: 16px;
+  }
+
+  .link-text1,
+  .freepik-link1{
+    font-size: 14px;
+  }
+
+  
+  .circle-division{
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0 0 0;
+  }
+
+  .pink-circle{
+    width: 70px;
+    height: 70px;
+    border-width: 12px;
+  }
+
+  .pink-circle1{
+    width: 110px;
+    height: 110px;
+    border-width: 18px;
+    margin-top: 0;
+  }
+} 
+
+@media screen and (min-width:1101px) and (max-width:1300px) {
+    .travel-division{
+        width: 700px;
+    }
+    .mountain-photo{
+        width: 450px;
+        height: 450px;
+    }
+    .mountain-section{
+        margin-top: 180px;
+    }
+    
+}
+@media screen and (min-width:1301px) {
+    .mountain-section{
+        margin-top: 180px;
+    }
+    
+}
